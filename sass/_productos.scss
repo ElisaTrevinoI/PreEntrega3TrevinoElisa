@@ -37,8 +37,8 @@
     transform: scale(1.3) rotate(5deg);
 }
 
-@media (min-width:$medidaMd) {
 
+@media (min-width:$medidaMd) {
 
     .imgEstambres {
         @include transition;
@@ -47,7 +47,6 @@
     .imgEstambres:hover {
         @include transform;
     }
-
 }
 
 @media (min-width:$medidaLg) {

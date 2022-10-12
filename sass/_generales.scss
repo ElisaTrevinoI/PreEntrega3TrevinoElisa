@@ -30,11 +30,13 @@ body {
     @include alineacion;
 }
 
+
 @media (min-width:$medidaSm) {
     .textoInformativo {
         @include alineacion;
     }
 }
+
 
 @media (min-width:$medidaMd) {
 
