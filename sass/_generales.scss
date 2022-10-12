@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    background-color: rgb(113, 240, 198);
+    color: #001f3f;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+@mixin alineacion {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.textoInformativo {
+    margin-bottom: 3rem;
+    @include alineacion;
+}
+
+.textoInformativo1 {
+    font-size: small;
+    @include alineacion;
+}
+
+@media (min-width:$medidaSm) {
+    .textoInformativo {
+        @include alineacion;
+    }
+}
+
+@media (min-width:$medidaMd) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .textoInformativo {
+        margin-top: 3rem;
+        text-align: left;
+    }
+
+    .textoInformativo1 {
+        font-size: small;
+        text-align: left;
+    }
+
+}

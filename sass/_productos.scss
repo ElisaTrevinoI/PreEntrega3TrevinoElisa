@@ -1,0 +1,64 @@
+.producto {
+    gap: 2px;
+    justify-items: center;
+}
+
+.imgEstambres {
+    width: 150px;
+    height: 165px;
+    border-radius: $br;
+}
+
+.imgPatrones {
+    width: 204px;
+    height: 260px;
+    border-radius: $br;
+}
+
+.imgAccesorios {
+    @extend .imgPatrones;
+}
+
+@media (min-width:$medidaSm) {
+    .imgEstambres {
+        width: 200px;
+        height: 215px;
+        border-radius: $br;
+    }
+}
+
+@mixin transition {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+@mixin transform {
+    transform: scale(1.3) rotate(5deg);
+}
+
+@media (min-width:$medidaMd) {
+
+
+    .imgEstambres {
+        @include transition;
+    }
+
+    .imgEstambres:hover {
+        @include transform;
+    }
+
+}
+
+@media (min-width:$medidaLg) {
+
+    .imgEstambres {
+        @include transition;
+    }
+
+    .imgEstambres:hover {
+        @include transform;
+    }
+
+
+}

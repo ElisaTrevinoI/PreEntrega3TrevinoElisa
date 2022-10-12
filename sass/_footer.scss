@@ -1,0 +1,18 @@
+footer {
+    margin-top: 5rem;
+}
+
+.imgRedes {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width:$medidaMd) {
+
+
+    .imgRedes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
